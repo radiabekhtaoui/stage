@@ -17,7 +17,7 @@ def multiplication(a, b):
     a_binary = format(a, '0' + str(n) + 'b')[::-1]
     b_binary = format(b, '0' + str(n) + 'b')[::-1]
 
-    # Applique les opérations de contrôle X (cX) aux qubits appropriés pour préparer les entrées
+    # Applique les opérations de contrôle X aux qubits appropriés pour préparer les entrées
     for i in range(n):
         if a_binary[i] == '1':
             circuit.x(q[i])
